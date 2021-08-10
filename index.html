@@ -8,6 +8,8 @@
     <title>Etsy - Email</title>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -15,18 +17,91 @@
     }
 
     body {
+        background-color: #f6f9fc;
         margin: auto;
         max-width: 800px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
     }
 
     #logo {
         width: 50px;
     }
 
-    .item {
-        width: 280px;
+    .price {
+        font-weight: 500;
     }
+
+    h3 {
+        padding: 2% 0;
+    }
+    .items-name{
+        text-decoration: underline;
+    }
+    .item{
+        margin: 2% 2%;
+    }
+
+    .btn {
+        text-decoration: none;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    a:visited {
+        color: inherit;
+    }
+
+    hr {
+        height: 1px;
+        clear: both;
+        background-color: silver;
+        width: 96%;
+        margin: auto;
+    }
+
+    footer {
+        color: silver;
+        text-align: center;
+        padding: 2%;
+    }
+
+    footer>p {
+        padding: 1%;
+    }
+
+    footer>a {
+        color: silver;
+    }
+
+    footer a:visited {
+        color: gray;
+    }
+
+    @media screen and (max-width: 600px) {
+        table[class="responsive-table"] {
+            width: 100% !important;
+            margin: auto;
+
+        }
+
+        table[class="responsive-table-2"] {
+            width: 100% !important;
+            margin: auto;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 400px) {}
 </style>
+
 <header>
     <img id="logo" src="./images/logo.png" alt="logo" id="logo">
 </header>
@@ -39,27 +114,88 @@
     <p>
         Check out the latest results of your saved searches.
     </p>
-    <h3>Latest results for wax melt</h3>
-    <div class="items">
-        <img src="https://ci4.googleusercontent.com/proxy/-zWZpCLFoUaQDVLgHvuM5fGVHHEuu1gIEjzEvPQXT0ZWB9kd1H6X3hWq5hG5vugi6yHtE0c2ZK8vIfPlFwTtSLLtlK5xmNHQw9qUwkzIE3J4MC0gaJ6Xq6UR4CRDyJgupqN1XOwrHvj6_g=s0-d-e1-ft#https://i.etsystatic.com/19175749/r/il/b6dada/2633081025/il_600x600.2633081025_mlul.jpg"
-            alt="" class="item">
-        <p class="caption">fall WAX MELTS - Choose You...</p>
-        <p class="price">$3.00</p>
-        <img src="https://ci4.googleusercontent.com/proxy/nmokh4wO2o7fgNJrN5GjfNJUezrAeWddZ3mdXzKB5GZAu4iCIvUzQciJBnle0GxqknF0awx1t5I-Q0PHRFAAFES_DfhN71k_8W5BVBAmV-z0VUNJG4GmG_Qb6f1Dq_XbR3gx5OWBw5nPVA=s0-d-e1-ft#https://i.etsystatic.com/11558871/r/il/653e3c/3115860162/il_600x600.3115860162_96fl.jpg"
-            alt="" class="item">
-        <p class="caption">Soy Wax Melts | Handmade Wa...</p>
-        <p class="price">$12.00</p>
-        <img src="https://ci5.googleusercontent.com/proxy/elhT_O4-a4SlzSic3SqiNFQnXmY7mMaYpz1-UhBJ-89Xw0FZ3Tt8aJYQY51JBkSrRyCPUeC97iRbWyAW6Vrn2DsBFCoa1K8ng79cmxxWTOFsZ8AAz5KTrYqCg5ctNkD428Q9E9FbbBcTWA=s0-d-e1-ft#https://i.etsystatic.com/22688717/r/il/829ed2/3180711197/il_600x600.3180711197_aaoo.jpg"
-            alt="" class="item">
-        <p class="caption">Strawberry Cheesecake | Str...</p>
-        <p class="price">$2.99</p>
-        <img src="https://ci5.googleusercontent.com/proxy/9FbPFbMX11CwscefeBn9mrnRQFZsDCRBNCAyet9qkuNU1UZcvafDpE8cUA2lBnS2QqOghWN6D0l6Zyc_EyLyGzG_QFVpBdPt8Wgnfq6amFOP1oSgkY2N0fOuEqNNBGjEoWk7I6xqJwAWXg=s0-d-e1-ft#https://i.etsystatic.com/20171802/r/il/0ccefa/2732334296/il_600x600.2732334296_p04e.jpg"
-            alt="" class="item">
-        <p class="caption">Wax Melt Snap Bars</p>
-        <p class="price">$1.44</p>
-    </div>
-    <p class="btn" align="center">See more</p>
+    <h3>Latest results for <span class="items-name">wax melt</span></h3>
 
+    <table width="100%" cellspacing="0" border="0">
+        <tr>
+            <td align="center">
+
+                <table width="600" cellspacing="0" border="0" class="responsive-table">
+                    <tr>
+                        <td>
+                            <table width="300" align="left" cellspacing="0" cellpadding="0" class="responsive-table-2">
+                                <tr>
+                                    <td>
+                                        <img src="https://ci4.googleusercontent.com/proxy/-zWZpCLFoUaQDVLgHvuM5fGVHHEuu1gIEjzEvPQXT0ZWB9kd1H6X3hWq5hG5vugi6yHtE0c2ZK8vIfPlFwTtSLLtlK5xmNHQw9qUwkzIE3J4MC0gaJ6Xq6UR4CRDyJgupqN1XOwrHvj6_g=s0-d-e1-ft#https://i.etsystatic.com/19175749/r/il/b6dada/2633081025/il_600x600.2633081025_mlul.jpg"
+                                            alt="" width="300" class="item">
+                                        <p class="caption">fall WAX MELTS - Choose You...</p>
+                                        <p class="price">$3.00</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="300" align="right" cellspacing="0" cellpadding="0" class="responsive-table-2">
+                                <tr>
+                                    <td>
+                                        <img src="https://ci4.googleusercontent.com/proxy/nmokh4wO2o7fgNJrN5GjfNJUezrAeWddZ3mdXzKB5GZAu4iCIvUzQciJBnle0GxqknF0awx1t5I-Q0PHRFAAFES_DfhN71k_8W5BVBAmV-z0VUNJG4GmG_Qb6f1Dq_XbR3gx5OWBw5nPVA=s0-d-e1-ft#https://i.etsystatic.com/11558871/r/il/653e3c/3115860162/il_600x600.3115860162_96fl.jpg"
+                                            alt="" width="300" class="item">
+                                        <p class="caption">Soy Wax Melts | Handmade Wa...</p>
+                                        <p class="price">$12.00</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <table width="600" cellspacing="0" border="0" class="responsive-table">
+                    <tr>
+                        <td>
+                            <table width="300" align="left" cellspacing="0" cellpadding="0" class="responsive-table-2">
+                                <tr>
+                                    <td>
+                                        <img src="https://ci5.googleusercontent.com/proxy/elhT_O4-a4SlzSic3SqiNFQnXmY7mMaYpz1-UhBJ-89Xw0FZ3Tt8aJYQY51JBkSrRyCPUeC97iRbWyAW6Vrn2DsBFCoa1K8ng79cmxxWTOFsZ8AAz5KTrYqCg5ctNkD428Q9E9FbbBcTWA=s0-d-e1-ft#https://i.etsystatic.com/22688717/r/il/829ed2/3180711197/il_600x600.3180711197_aaoo.jpg"
+                                            alt="" width="300" class="item">
+                                        <p class="caption">Strawberry Cheesecake | Str...</p>
+                                        <p class="price">$2.99</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="300" align="right" cellspacing="0" cellpadding="0" class="responsive-table-2">
+                                <tr>
+                                    <td>
+                                        <img src="https://ci5.googleusercontent.com/proxy/9FbPFbMX11CwscefeBn9mrnRQFZsDCRBNCAyet9qkuNU1UZcvafDpE8cUA2lBnS2QqOghWN6D0l6Zyc_EyLyGzG_QFVpBdPt8Wgnfq6amFOP1oSgkY2N0fOuEqNNBGjEoWk7I6xqJwAWXg=s0-d-e1-ft#https://i.etsystatic.com/20171802/r/il/0ccefa/2732334296/il_600x600.2732334296_p04e.jpg"
+                                            alt="" width="300" class="item">
+                                        <p class="caption">Wax Melt Snap Bars</p>
+                                        <p class="price">$1.44</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <a href="#" class="btn">See more</a>
+
+    <hr>
+
+    <footer class="footer">
+        <p>
+            You are receiving this email because you registered on Etsy.com with this email address. To stop receiving
+            Etsy marketing emails, <a href="#">unsubscribe</a> here.
+        </p>
+        <p>
+            If you live in North America or South America, this email is sent by Etsy, Inc., 117 Adams Street, Brooklyn,
+            NY, 11201, US; if you live elsewhere, this email is sent by Etsy Ireland UC, a subsidiary of Etsy, Inc.,
+            66/67 Great Strand Street, Dublin 1, D01 RW84, Ireland having company registration number 495696 and VAT
+            registration number IE9777587C.
+        </p>
+        <p>
+            Copyright 2021 Etsy, Inc., an affiliate of Etsy Ireland UC. All rights reserved.
+        </p>
+
+    </footer>
 </body>
 
 </html>
